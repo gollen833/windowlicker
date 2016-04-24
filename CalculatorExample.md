@@ -1,0 +1,5 @@
+This example uses Windowlicker to test a simple calculator application.
+
+The [end to end tests](http://code.google.com/p/windowlicker/source/browse/trunk/calculator-example/end-to-end-tests/com/objogate/wl/example/calculator/tests/BasicArithmeticTests.java) use a [Calculator Driver](http://code.google.com/p/windowlicker/source/browse/trunk/calculator-example/end-to-end-tests/com/objogate/wl/example/calculator/tests/CalculatorDriver.java) to control the user interface.  The Calculator Driver provides task-based abstractions (performing arithmetic) to the tests and implements them in terms of low-level activities (pressing buttons, typing keys).
+
+The [calculator application](http://code.google.com/p/windowlicker/source/browse/trunk/calculator-example/src/com/objogate/wl/example/calculator/Calculator.java) defines a few constants for window names to support refactoring. We don't want the tests to break when the application is refactored.  However, the tests exercise the application functionality entirely through the user interface.
